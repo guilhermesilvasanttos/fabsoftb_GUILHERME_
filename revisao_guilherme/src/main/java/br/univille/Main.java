@@ -1,16 +1,34 @@
 package br.univille;
 
+import br.univille.entity.Cliente;
+
 public class Main {
     public static void main(String[] args) {
-        //System.out.println("Hello world!");
+        // System.out.println("Carlos");
 
-        cliente zezinho = new cliente();
-        zezinho.setNome("zezinho sila");
-        //variável -> é driada e moldada da forma desejada
-        //new -> comando para criar instancia
-        //Sinal = -> reia um referência para o objeto
-        //tipo primitivo - ex int idade = 20
-        cliente mariazinha = new cliente();
-        mariazinha.setNome("Mariazinha");
+        Cliente carlos = new Cliente("carluxo");
+        Cliente lolo = new Cliente("lorenzo");
+
+        System.out.println(carlos.getNome() + " " + lolo.getNome());
+        System.out.println(carlos.toString());
+        System.out.println(lolo.hashCode());
+        System.out.println(carlos.getNome().equals(lolo.getNome()));
+    }
+}
+package br.univille;
+
+import br.univille.entity.Cliente;
+
+public class Main {
+    public static void main(String[] args) {
+        // System.out.println("Carlos");
+
+        Cliente carlos = new Cliente("carluxo");
+        Cliente lolo = new Cliente("lorenzo");
+
+        System.out.println(carlos.getNome() + " " + lolo.getNome());
+        System.out.println(carlos.toString());
+        System.out.println(lolo.hashCode());
+        System.out.println(carlos.getNome().equals(lolo.getNome()));
     }
 }
