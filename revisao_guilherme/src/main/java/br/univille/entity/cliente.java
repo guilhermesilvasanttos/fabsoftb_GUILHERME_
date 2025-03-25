@@ -1,42 +1,72 @@
 package br.univille.entity;
 
+import java.util.ArrayList;
+
 public class Cliente {
-    private long id;
+    //variável - atributo
     private String nome;
-    private String endereço;
-    
+    private long id;
+    private String endereco;
+    private Cidade cidade;
+    private ArrayList<Pokemon> listaPokemon = new ArrayList<Pokemon>(); //não basta apenas criarmos uma variavel do tipo arraylist, precisamos instanciá-la;
 
     public long getId() {
         return id;
     }
+
+    public ArrayList<Pokemon> getListaPokemon() {
+        return listaPokemon;
+    }
+
+    public void setListaPokemon(ArrayList<Pokemon>listaPokemon) {
+        this.listaPokemon = listaPokemon;
+    }
+
     public void setId(long id) {
         this.id = id;
     }
-    public String getEndereço() {
-        return endereço;
+
+    public String getEndereco() {
+        return endereco;
     }
-    public void setEndereço(String endereço) {
-        this.endereço = endereço;
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
     }
-    //CONSTRUTOR COM PARAMETRO
+
+    //construtor - mesmo nome da classe e não te retorno
+    // inicializar atributos
+    // obrigar a passagem de valores
     public Cliente(String nome) {
         this.nome = nome;
     }
-    //CONSTRUTOR SEM PARAMETRO
-    // public Cliente() {
-    // }
-    //VARIAVEL OU ATRIBUTO
-    // private String nome;
-    //METODO TRANSFORMADOR
+    //polimorfismo - várias formas de existir a mesma coisa
+    public Cliente() {
+        
+    }
+    //método
+    //sobreescrita de método (meu pai me deu pronto e eu zuera reescrevi)
+    @Override
     public String toString(){
         return getNome();
     }
-    //MÉTODOS GETTER E SETTER 
+
+    //método
     public String getNome() {
         return nome;
     }
+
     public void setNome(String nome) {
         this.nome = nome;
     }
+    //encapsulamento = esconder a 
+    // implementação dentro do objeto
 
+    public Cidade getCidade() {
+        return cidade;
+    }
+
+    public void setCidade(Cidade cidade) {
+        this.cidade = cidade;
+    }
 }
