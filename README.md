@@ -1,102 +1,64 @@
-# Fábrica de Software 2025/1
+# Fábrica de software 2025/1
+## Proposta de projeto
 
-## Repositório dos alunos
-- [Repos](https://gist.github.com/d4e37df9f6772173110603fc8bf90b84.git)
+# Nome da equipe: Guilherme Miranda Silva Dos Santos
 
-## Propostas de projeto
-
-- Nome do sistema Ex:(Sistema para Mecânica)
-  - Funcionalidade 1
-  - Funcionalidade 2
-  - Funcionalidade 3
-
-<s>
-
-- Nome do sistema Ex:(Sistema para Mecânica)
-  - Funcionalidade 1
-  - Funcionalidade 2
-  - Funcionalidade 3
-
-</s>
-
+ - Sistema para qualidade avaliações.
+    - Cadastro de itens avaliados, pendentes e em atraso.
+    - Consulta de normas dos produtos.
+    - Preenchimento de documento para copia controlada.
+    - Levantamento de projetos concluidos, atrasados, e em analise.
+    - Confirmação de usuario utilizando as funções dos projetos.
+    - Encaminhamento automatico quando projeto esta concluido para os responsaveis. 
+    - Aviso de divergencias de analises nas avaliações com a solicitação do cliente.
+    - Sinal de divergencia das informações.
+    - Pagínas para os comandos acima.
 
 ## Livro Eng Software Moderna
 [Eng. Soft Moderna - Requisitos](https://engsoftmoderna.info/cap3.html)
 
 ## Histórias de Usuário
-- Como um Atendente eu gostaria de registrar os dados do cliente como: nome, endereço, telefone, email
-- Como um Atendente eu gostaria de registrar os dados do Carro do cliente como: marca, modelo, placa
-- Como um Atendente eu gostaria de vincular o Carro ao Cliente
-- Como um Atedente eu gostaria de agendar uma revisão com os seguintes dados: cliente, carro, data entrada, data saida, valor da revisão
-- Como um Atendente eu gostaria de vincular peças trocadas na revisão com os seguintes dados: codigo, nome, preço unitário
-- Como um Atendente eu gostaria de vincular os serviços de mão de obra realizados na revisão com os seguintes dados: nome do funcionário, quantidade de horas, valor
 
+<s>
 
-## Comandos do Git
+</s>
 
-### Instalação
-[Git Bash](https://git-scm.com/downloads)
+- Requisito funcional : o sistema faz
+* cadastro de cliente e afins
 
-### Configuração inicial
+- Requisito não funcional : 
+* tempo de resposta, capacitade e afins sobre o sistema.
 
-```
-git config --global user.name "NOME DO USUARIO NO GITHUB"
-git config --global user.email "EMAIL DA CONTA DO GITHUB"
-```
-### Tipos de mensagens do commit
+# Historia do usuario sobre o sistema
 
-- feat: (new feature for the user, not a new feature for build script)
-- fix: (bug fix for the user, not a fix to a build script)
-- docs: (changes to the documentation)
-- style: (formatting, missing semi colons, etc; no production code change)
-- refactor: (refactoring production code, eg. renaming a variable)
-- test: (adding missing tests, refactoring tests; no production code change)
-- chore: (updating grunt tasks etc; no production code change)
+- como "atendente" gostaria de cadastrar as informações dos clientes como ( EXEMPLO )
+(e-mail, telefone, cpf ...)
 
-### Commit e Push
+# Começo da Historia do sistema
 
-```
-git add .
-git commit -m "tipo: o que foi feito"
-git push -u origin main
-```
+# Cadastro de Itens Avaliados, Pendentes e em Atraso
+- Como "analista de qualidade", gostaria de cadastrar os itens avaliados, pendentes e em atraso, para que eu possa acompanhar o progresso de cada item de avaliação de forma organizada e garantir que as pendências sejam tratadas dentro do prazo.
 
-### Ambiente de desenvolvimento JAVA
-[Eclipse Adoptium](https://adoptium.net/)
-[Microsoft OpenJDK](https://www.microsoft.com/openjdk)
-[AWS CORRETTO](https://aws.amazon.com/pt/corretto/)
-[VSCode](https://code.visualstudio.com/download)
-[Extension Pack for Java](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack)
+# Consulta de Normas dos Produtos
+- Como "analista de conformidade", gostaria de consultar as normas dos produtos, para que eu possa garantir que as avaliações estão sendo feitas de acordo com as especificações e padrões exigidos.
 
+# Preenchimento de Documento para Cópia Controlada
+- Como "responsável pelo controle de documentos", gostaria de preencher um documento de cópia controlada, para que o processo de aprovação e rastreabilidade de documentos seja registrado de maneira organizada e controlada.
 
-- JRE - Java Runtime Environment
-   - Java Virtual Machine JVM 
-     - java.exe / javaw.exe
-- JDK - Java Development Kit
-  - Compilar o java (javac.exe)
+# Levantamento de Projetos Concluídos, Atrasados e em Análise
+- Como "coordenador de projetos", gostaria de acessar um levantamento dos projetos concluídos, atrasados e em análise, para que eu possa tomar ações corretivas quando necessário e planejar os próximos passos para os projetos em andamento.
 
-## Diagrama de classes
-![Diagrama](./diagramas/png/classes.png)
+# Confirmação de Usuário Utilizando as Funções dos Projetos
+- Como "administrador de sistema", gostaria de confirmar os usuários que estão utilizando as funções dos projetos, para que eu possa garantir que as pessoas corretas têm acesso às informações e responsabilidades adequadas dentro do sistema.
 
+# Encaminhamento Automático Quando Projeto Estiver Concluído
+- Como "gerente de projeto", gostaria de receber uma notificação automática ou encaminhamento de um projeto quando ele for concluído, para que eu possa notificar a equipe responsável e garantir que todas as etapas sejam finalizadas corretamente.
 
-## Prompts Aula 01/04/2025
-- Encontrar as entidades nas histórias de usuário
-```bash
-@workspace #sym:## Histórias de Usuário quais são as entidades
-```
-- Gerar as classes java das entidades
-```bash
-@workspace por favor, crie as classe em java no pacote entity para representar as entidades
-```
-- Gerar o Diagrama de Classes de Entidade (Domínio)
-```bash
-@workspace por favor gere um diagrama uml no padrão plantuml das classes do pacote br.univille.projfabsoft
-```
-- Instalar a extensão [PlantUML](https://marketplace.visualstudio.com/items?itemName=jebbs.plantuml)
+# Aviso de Divergências de Análises nas Avaliações com a Solicitação do Cliente
+- Como "analista de qualidade", gostaria de ser avisado automaticamente quando houver divergências entre as análises feitas e as solicitações do cliente, para que eu possa revisar o trabalho e alinhar os resultados conforme as expectativas do cliente.
 
-## Diagrama de classes Entidade (Domínio)
-![Diagrama](./diagramas/png/classes_projfabsoft.png)
+# Sinal de Divergência das Informações
+- Como "auditor de qualidade", gostaria de visualizar um sinal de divergência nas informações inseridas no sistema, para que eu possa identificar rapidamente quaisquer inconsistências e tomar as medidas necessárias para corrigir esses dados.
 
-## Clean Architecture
-[Livro](https://integrada.minhabiblioteca.com.br/reader/books/9788550808161/pageid/0)
-![Arquitetura Limpa](./diagramas/CleanArchitecture.jpg)
+# Páginas para os Comandos Acima
+- Como "usuário do sistema", gostaria de ter acesso a páginas dedicadas para cada uma das funcionalidades (cadastro de itens, consulta de normas, preenchimento de documentos, relatórios de projetos), para que eu possa navegar facilmente e utilizar as ferramentas do sistema de forma eficiente e organizada.

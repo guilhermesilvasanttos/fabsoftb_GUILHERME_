@@ -6,22 +6,19 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class Peca {
+public class Usuario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private String codigo;
+    private long id;
     private String nome;
-    private Double precoUnitario;
+    private String email;
 
-
-    // Getters e Setters
-    public String getCodigo() {
-        return codigo;
+    public long getId() {
+        return id;
     }
 
-    public void setCodigo(String codigo) {
-        this.codigo = codigo;
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getNome() {
@@ -32,11 +29,12 @@ public class Peca {
         this.nome = nome;
     }
 
-    public Double getPrecoUnitario() {
-        return precoUnitario;
+    public String getEmail() {
+        return email;
     }
 
-    public void setPrecoUnitario(Double precoUnitario) {
-        this.precoUnitario = precoUnitario;
+    public void setEmail(String email) {
+        this.email = email;
     }
+    
 }
