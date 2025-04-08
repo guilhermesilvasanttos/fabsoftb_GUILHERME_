@@ -19,6 +19,10 @@ public class Cliente {
     private String cpf;
     @OneToMany
     private List<Documento> documento;
+    @OneToMany
+    private List<Norma> norma;
+    @OneToMany
+    private List<Projeto> projeto;
 
     public long getId() {
         return id;

@@ -1,9 +1,12 @@
 package br.univille.projfabsoft.entity;
 
+import java.util.List;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 
 @Entity
 public class Usuario {
@@ -12,6 +15,14 @@ public class Usuario {
     private long id;
     private String nome;
     private String email;
+    @OneToMany
+    private List<Norma> norma;
+    @OneToMany
+    private List<Cliente> cliente;
+    @OneToMany
+    private List<Itemavaliação> itemavaliacao;
+    @OneToMany
+    private List<Projeto> projeto;
 
     public long getId() {
         return id;
